@@ -1,0 +1,106 @@
+.page-login {
+  display: flex;
+  margin-left: 11.5%;
+  /*border: 1px solid greenyellow;*/
+  height: calc(100% - 1px);
+  background: url('../../images/mac.png') no-repeat right top;
+  background-size: 50% auto;
+}
+
+.login-form {
+  width: 42.2%;
+  /*border: 5px solid tomato;*/
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 95px;
+}
+
+.form-input-group {
+  display: flex;
+  /*margin-top: 95px;*/
+  flex-direction: column;
+}
+
+.input-group--username,
+.input-group--password {
+  margin-bottom: 45px;
+  height: 97px;
+  position: relative;
+
+}
+
+.input-group--password {
+  margin-bottom: 29px;
+}
+
+.input-group--username input,
+.input-group--password input {
+  border: 1px solid #e6e6e6;
+  color: #7ca2b7;
+  height: 97px;
+  border-radius: 30px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 40px 0 102px;
+  font-size: 24px;
+
+    letter-spacing: 1.3px;
+}
+
+.form-input-group input::-webkit-input-placeholder {
+  color: #7ca0b5;
+}
+
+.input-group--username::before,
+.input-group--password::before {
+  content: '';
+  width: 35px;
+  height: 50px;
+  background: blue;
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  left: 40px;
+}
+
+.input-group--username::before {
+  background: url('../../images/username-icon.png') no-repeat;
+}
+
+.input-group--password::before {
+  background: url('../../images/password-icon.png') no-repeat;
+}
+
+.forget-link {
+  opacity: 0.7;
+  text-align: right;
+  margin-bottom: 40px;
+  font-size: 23px;
+  letter-spacing: 0.6px;
+}
+
+.forget-link a {
+  color: #0d4d71;
+  text-decoration: none;
+}
+
+.login-button-box button {
+  height: 85px;
+  width: 100%;
+  text-align: center;
+  background: #1894f3;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 23px;
+  letter-spacing: 1.5px;
+}
